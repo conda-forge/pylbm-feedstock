@@ -1,11 +1,5 @@
 {% set version = "0.4.1" %}
 
-# mpi must be defined for conda-smithy lint
-{% if not mpi %}
-# conda-smithy misbehaves if mpi is unset
-{% set mpi = 'mpich' %}
-{% endif %}
-
 package:
   name: pylbm
   version: {{ version }}
@@ -25,17 +19,16 @@ requirements:
     - pip
   run:
     - python >=3.5
-    - numpy,
-    - matplotlib,
-    - sympy >=1.1.1,<1.2,
-    - cython,
-    - {{ mpi }}
-    - h5py,
-    - mpi4py,
-    - colorlog,
-    - colorama,
-    - cerberus,
-    - jinja2,
+    - numpy
+    - matplotlib
+    - sympy >=1.1.1,<1.2
+    - cython
+    - h5py
+    - mpi4py
+    - colorlog
+    - colorama
+    - cerberus
+    - jinja2
 
 test:
   imports:
