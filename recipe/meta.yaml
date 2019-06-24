@@ -31,6 +31,8 @@ requirements:
     - jinja2
 
 test:
+  requires:
+    - mpich # [not win]
   imports:
     - pylbm
 
