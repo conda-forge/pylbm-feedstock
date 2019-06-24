@@ -10,13 +10,13 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{PYTHON}} setup.py install --single-version-externally-managed --record record.txt"
   noarch: python
 
 requirements:
   host:
     - python >=3.5
-    - pip
+    - setuptools
   run:
     - python >=3.5
     - numpy
