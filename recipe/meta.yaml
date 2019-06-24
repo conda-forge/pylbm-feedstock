@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.4.1" %}
 
 package:
   name: pylbm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pylbm/pylbm/archive/{{ version }}.tar.gz
-  sha256: 9a9263a5f14fbbd6a65b73c7e904c1add789f3334228f9535309d533a104b552
+  sha256: c028d780a110af51f462637b081386e22765ab880d33e625682b789d617d63e2
 
 build:
   number: 0
