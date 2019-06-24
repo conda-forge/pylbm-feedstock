@@ -9,14 +9,14 @@ source:
   git_rev: {{ version }}
 
 build:
-  number: 0
-  script: "{{PYTHON}} setup.py install --single-version-externally-managed --record record.txt"
+  number: 1
+  script: "{{PYTHON}} -m pip install . --no-deps -vv"
   noarch: python
 
 requirements:
   host:
     - python >=3.5
-    - setuptools
+    - pip
   run:
     - python >=3.5
     - numpy
@@ -24,7 +24,6 @@ requirements:
     - sympy >=1.1.1,<1.2
     - cython
     - h5py
-    - mpich # [linux]
     - mpi4py
     - colorlog
     - colorama
