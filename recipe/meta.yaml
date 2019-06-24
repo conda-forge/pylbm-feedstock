@@ -23,6 +23,7 @@ requirements:
     - matplotlib,
     - sympy >=1.1.1,<1.2,
     - cython,
+    - mpich [linux]
     - h5py,
     - mpi4py,
     - colorlog,
