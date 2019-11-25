@@ -32,7 +32,7 @@ requirements:
 
 test:
   requires:
-    - mpich # [not win]
+    - mpich  # [not win]
   imports:
     - pylbm
 
