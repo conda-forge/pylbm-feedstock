@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Package for numerical simulations using Lattice Boltzmann solvers
+Summary: A flexible Python package for lattice Boltzmann method
 
 
 
