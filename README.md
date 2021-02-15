@@ -5,11 +5,9 @@ Home: http://pylbm.readthedocs.io
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylbm-feedstock/blob/master/LICENSE.txt)
 
 Summary: A flexible Python package for lattice Boltzmann method
-
-
 
 Current build status
 ====================
