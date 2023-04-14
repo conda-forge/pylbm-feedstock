@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - hatch
   run:
     - python >=3.6
     - numpy
