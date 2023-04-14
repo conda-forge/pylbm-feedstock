@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: pylbm
@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - hatch
   run:
     - python >=3.6
     - numpy
