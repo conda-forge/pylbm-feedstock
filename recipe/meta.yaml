@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: pylbm
@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: "{{PYTHON}} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
 
 requirements:
