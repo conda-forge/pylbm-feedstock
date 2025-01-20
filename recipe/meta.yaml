@@ -9,17 +9,17 @@ source:
   git_rev: {{ version }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - hatch
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - numpy-stl
     - matplotlib-base
@@ -35,6 +35,7 @@ requirements:
 test:
   requires:
     - mpich  # [not win]
+    - python {{ python_min }}
   imports:
     - pylbm
 
