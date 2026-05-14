@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - hatch
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - numpy >=2
     - numpy-stl
     - matplotlib-base
@@ -33,9 +33,12 @@ requirements:
     - jinja2
 
 test:
-  requires:
-    - mpich  # [not win]
-    - python {{ python_min }}
+  - python:
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+        - mpich  # [not win]
   imports:
     - pylbm
 
